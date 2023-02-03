@@ -1,0 +1,76 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+}
+
+input {
+    color:black;
+    font-size: 15px;
+}
+
+body {
+    background: linear-gradient(to right, 
+    #57edf8, 
+    #58ffcd, 
+    #ffffff);
+}
+
+div, section {
+    border: 0.1px solid black;
+    margin: 1px;
+}
+
+
+table {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    gap: 5px;
+}
+
+th {
+    border: 1px solid black;
+}
+
+.background {
+    background: linear-gradient(to top left, 
+    #ffd000, 
+    #ff1e00, 
+    #ffffff);
+    border-radius: 20px;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: None;
+}
+
+.sectionBimestre {
+    display: flex;
+}
+
+.bimestre1, .bimestre2, .bimestre3, .bimestre4, .provaFinal, .inputNome {
+    width: 80px;
+}
+
+.secbotao {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+    padding: 3px 40px;
+}

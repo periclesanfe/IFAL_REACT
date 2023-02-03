@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE_BASICOS_JS</title>
+</head>
+
+<body>
+    <script>
+        var listaDeProdutos = ['Computador', 'Telefone', 'Mouse', 'Teclado'];
+        console.log(listaDeProdutos) // Questão 1
+        console.log(listaDeProdutos.length) // Questão 2
+
+        window.onload = function minhaFuncao() {
+            for (var i = 0; i <= listaDeProdutos.length; i++) {
+                if (listaDeProdutos[i] == 'Mouse') {
+                    var novaListaNoMouse = [...listaDeProdutos]; // Criei uma nova lista para não interferir nas outras questões
+                    novaListaNoMouse.splice(i, 1); // Apenas modifiquei a nova lista criada
+                    console.log(novaListaNoMouse); // Questão 3
+                }
+            };
+
+            var possui = false
+            for (var i = 0; i <= listaDeProdutos.length; i++) {
+                if (listaDeProdutos[i] == 'Computador') {
+                    possui = true
+                }
+            };
+
+            if (possui == true) {
+                console.log('Tem Computador no estoque') // Questão 4
+            } else {
+                console.log('Não tem Computador no estoque')
+            }
+
+            console.log(listaDeProdutos[1]); // Questão 5
+        }
+    </script>
+</body>
+
+</html>

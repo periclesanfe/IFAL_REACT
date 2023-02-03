@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="adicionarAlunos">
+            <div class="divNome">
+                <p>Nome</p>
+                <input type="text" id="nome" name="nome" class="inputNome"><br><br>
+            </div>
+            <div class="divNotas">
+                <p>Notas</p>
+                <section class="sectionBimestre">
+                    <div>
+                        <p>1º Bimestre</p>
+                        <input type="text" id="bimestre1" class="bimestre1" required>
+                    </div>
+                    <div>
+                        <p>2º Bimestre</p>
+                        <input type="text" id="bimestre2" class="bimestre2" required>
+                    </div>
+                    <div>
+                        <p>3º Bimestre</p>
+                        <input type="text" id="bimestre3" class="bimestre3" required>
+                    </div>
+                    <div>
+                        <p>4º Bimestre</p>
+                        <input type="text" id="bimestre4" class="bimestre4" required>
+                    </div>
+                    <div>
+                        <p>Prova Final</p>
+                        <input type="text" id="provaFinal" class="provaFinal">
+                    </div>
+                </section>
+            </div>
+            <section class="secbotao">
+                <button class='botao' id="botaoAdicionar" onclick="registerEstudent()">Adicionar</button>
+            </section>
+        </div>
+
+
+        <table id="boletim">
+            <caption><b>Relação de Alunos</b></caption>
+            <tr>
+                <th width="300">Nome Completo</th>
+                <th width="100">Total de pontos</th>
+                <th width="100">Média do ano </th>
+                <th width="100">Situação</th>
+                <th width="100">Prova Final</th>
+            </tr>
+
+
+        </table>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
