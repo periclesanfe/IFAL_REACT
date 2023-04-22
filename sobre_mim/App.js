@@ -65,7 +65,7 @@ const StackTabs = () => {
           tabBarIcon: ({ color, size }) => (
             <Icone
               source={require('./assets/react.png')} // Define o caminho da imagem
-              style={{ width: 40, height: 45 }}
+              style={{ width: 40, height: 45, tintColor: '#1F73D8' }}
             />)}}
           />
 
